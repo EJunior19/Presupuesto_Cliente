@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto - Asesor Junior</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Presupuesto de Producto</h1>
+    <p class="frase">"El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito."</p>
+    <p class="asesor">- Junior Enciso, Asesor</p>
+
+    <form id="formPresupuesto">
+      <fieldset>
+        <legend>Datos del Cliente</legend>
+        <div class="form-group">
+          <label for="nombreCliente">Nombre del Cliente:</label>
+          <input type="text" id="nombreCliente" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Productos</legend>
+        <div id="productosContainer"></div>
+        <button type="button" onclick="agregarProducto()">+ Agregar Producto</button>
+      </fieldset>
+
+      <button type="button" onclick="generarPDF()">Generar PDF</button>
+    </form>
+
+    <p id="mensajeFinal" style="margin-top:20px; font-size:16px;"></p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://unpkg.com/jspdf-autotable@3.5.23/dist/jspdf.plugin.autotable.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

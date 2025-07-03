@@ -1,0 +1,93 @@
+body {
+  background-color: #0b2a42;
+  font-family: 'Segoe UI', sans-serif;
+  color: #d4f6ec;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, .frase, .asesor {
+  text-align: center;
+  color: #35e88e;
+}
+
+.frase {
+  font-style: italic;
+  font-size: 14px;
+}
+
+fieldset {
+  border: 2px solid #35e88e;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #143e5c;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #35e88e;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #35e88e;
+  border-radius: 5px;
+  background-color: #0e2f48;
+  color: #fff;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #35e88e;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #003c2c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #24b26c;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  legend {
+    font-size: 16px;
+  }
+  input {
+    font-size: 14px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
